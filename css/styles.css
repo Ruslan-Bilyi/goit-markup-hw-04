@@ -79,6 +79,7 @@ body {
   color: #434455;
   padding: 24px 0;
   display: block;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link:hover {
   font-weight: 400;
@@ -124,7 +125,7 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .desc-button:hover {
   background: #404bbf;
@@ -247,6 +248,8 @@ body {
   width: 264px;
   min-height: 380px;
   width: calc((100% - 3 * 24px) / 4);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .member-data {
   padding: 32px 0;
@@ -290,6 +293,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link:hover,
+.social-link:focus {
+  background-color: #404bbf;
 }
 .portfolio-title {
   font-weight: 700;
@@ -325,6 +333,9 @@ body {
 }
 .portfolio-item {
   width: calc((100% - 2 * 24px) / 3);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover .overlay {
@@ -359,6 +370,7 @@ body {
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfilio-container {
   padding-bottom: 120px;
@@ -415,8 +427,16 @@ img {
 }
 .footer-text {
   width: 264px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
 
 .footer-container {
   margin-right: 120px;
+  display: flex;
+  align-items: baseline;
 }
